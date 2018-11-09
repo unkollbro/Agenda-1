@@ -23,8 +23,12 @@ public class Gestor {
     }
     
     public String mostrarTodasPersonas(){
-        String datos;
-        
+        String datos="";
+        for (int i = 0; i < vAgenda.length; i++) {
+            if (vAgenda[i]!=null){
+                datos += vAgenda[i].toString();
+            }
+        }
         return datos;
     }
     
